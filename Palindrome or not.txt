@@ -1,0 +1,30 @@
+Write a PLSQL program to check the given number is Palindrome or not.
+
+declare
+  
+
+    num1 number;
+    num2 number;
+    temp number:=0;
+    rem number;
+   
+begin
+    num1:=12345;
+    num2:=num1;
+      
+    -- while loop with condition till n>0
+    while num1>0
+    loop
+        rem:=mod(num1,10);
+        temp:=(temp*10)+rem;
+        num1:=trunc(num1/10);
+    end loop; 
+      
+    if num2 = temp
+    then
+        dbms_output.put_line('Palindrome');
+    else
+        dbms_output.put_line('Not palindrome');
+    end if;
+end;
+/
