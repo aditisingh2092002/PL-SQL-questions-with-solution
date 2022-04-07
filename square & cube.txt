@@ -1,0 +1,14 @@
+Write a PLSQL program to display square and cube of a number.
+
+declare
+a int:=8;
+cube int;
+square int;
+begin
+cube:= a*a*a;
+square:=a*a;
+
+dbms_output.put_line('The Cube of the number is'||cube);
+dbms_output.put_line('The square of number is' || square);
+end;
+/
