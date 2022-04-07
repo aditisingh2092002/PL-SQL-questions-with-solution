@@ -1,0 +1,20 @@
+Write a PLSQL program to display the sum of every digit of a given number.
+
+DECLARE 
+  
+     
+    num        INTEGER; 
+    temp_sum INTEGER; 
+    r        INTEGER; 
+BEGIN 
+    num := 122278; 
+    temp_sum := 0; 
+ 
+    WHILE num <> 0 LOOP 
+        r := MOD(num, 10); 
+        temp_sum := temp_sum + r; 
+        num := Trunc(num / 10); 
+    END LOOP; 
+    dbms_output.Put_line('sum of digits = ' 
+                         || temp_sum); 
+END; 
