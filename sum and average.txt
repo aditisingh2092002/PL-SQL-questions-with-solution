@@ -1,0 +1,25 @@
+To find sum and avg of three numbers .
+
+DECLARE 
+  
+    a     NUMBER := 12; 
+    b     NUMBER := 14; 
+    c     NUMBER := 20; 
+      
+    sum NUMBER; 
+    avg NUMBER; 
+      
+BEGIN 
+  
+    sum := a + b + c; 
+	avg := sum / 3; 
+  
+    
+    dbms_output.Put_line('Sum = ' 
+                         ||sum); 
+  
+    --print Average  sum of a, b, c number 
+    dbms_output.Put_line('Average = ' 
+                         ||avg); 
+END;
+/
